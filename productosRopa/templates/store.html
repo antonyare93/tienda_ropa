@@ -1,0 +1,22 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+
+<body>
+    <div class="grid">
+        {% for producto in productos %}
+
+            <div class="card">
+                <a href="{{producto.link_to_origin}}">
+                <img class="img_prev" src="{{producto.link_to_image}}" alt="{{producto.nombre_producto}}">
+                <div class="description">
+                    <div class="titulo"><h3>{{producto.categoria}}</h3></div>
+                    <div class="precio"><p>{{producto.precio_venta}}</p></div>
+                </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+
+{% endblock%}
