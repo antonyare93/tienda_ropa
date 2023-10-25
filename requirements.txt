@@ -35,7 +35,7 @@ sortedcontainers==2.4.0
 sqlparse==0.4.4
 stack-data==0.6.2
 tornado==6.2
-traitlets==5.10.1
+traitlets==5.9.0
 trio==0.22.2
 trio-websocket==0.11.1
 tzdata==2023.3
